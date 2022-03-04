@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan BD</title>
+    <title>Log In</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleU.css">
@@ -24,10 +23,9 @@
         }
     </script>
 </head>
-
 <body>
-    <!-- Navbar Section -->
-    <section>
+     <!-- Navbar Section -->
+     <section>
         <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
@@ -79,104 +77,88 @@
         </nav>
     </section>
 
-
-
-
-
-
-    <!-- Card Section -->
-
+    <!-- Login from -->
     <!-- component -->
-    <!-- Create By Joker Banny -->
-    <div class="min-h-screen bg-green-500 flex justify-center items-center py-1">
-        <div class="container mx-auto p-12 bg-gray-100 rounded-xl">
-            <h1 class="text-4xl uppercase font-bold from-current mb-8">Loan For All</h1>
-            <!-- Box-1 -->
-            <div class="sm:grid sm:grid-cols-2 lg:grid-cols-5 gap-4 space-y-4 sm:space-y-0">
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/personal.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Personal Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
+<!-- This is an example component -->
+<section>
+    <div class="font-sans">
+        <div class="relative min-h-screen flex flex-col sm:justify-center items-center bg-gray-100 ">
+            <div class="relative sm:max-w-sm w-full">
+                <div class="card bg-blue-400 shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-6"></div>
+                <div class="card bg-red-400 shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-6"></div>
+                <div class="relative w-full rounded-3xl  px-6 py-4 bg-gray-100 shadow-md">
+                    <label for="" class="block mt-3 text-sm text-gray-700 text-center font-semibold">
+                        Login
+                    </label>
+                    <form method="#" action="#" class="mt-10">
+                                       
+                        <div>
+                            <input type="email" placeholder="Your Email" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">
+                        </div>
+            
+                        <div class="mt-7">                
+                            <input type="password" placeholder="Password" class="mt-1 block w-full border-none bg-gray-100 h-11 rounded-xl shadow-lg hover:bg-blue-100 focus:bg-blue-100 focus:ring-0">                           
+                        </div>
+    
+                        <div class="mt-7 flex">
+                            <label for="Remember Me" class="inline-flex items-center w-full cursor-pointer">
+                                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
+                                <span class="ml-2 text-sm text-gray-600">
+                                    Remember Me
+                                </span>
+                            </label>
+            
+                           <div class="w-full text-right">     
+                                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="#">
+                                    Forgot Your Password?
+                                </a>                                  
+                           </div>
+                        </div>
+            
+                        <div class="mt-7">
+                            <button class="bg-blue-500 w-full py-3 rounded-xl text-white shadow-xl hover:shadow-inner focus:outline-none transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                                Login
+                            </button>
+                        </div>
+            
+                        <div class="flex mt-7 items-center text-center">
+                            <hr class="border-gray-300 border-1 w-full rounded-md">
+                            <label class="block font-medium text-sm text-gray-600 w-full">
+                                Sign In With
+                            </label>
+                            <hr class="border-gray-300 border-1 w-full rounded-md">
+                        </div>
+            
+                        <div class="flex mt-7 justify-center w-full">
+                            <button class="mr-5 bg-blue-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                                
+                                Facebook
+                            </button>
+            
+                            <button class="bg-red-500 border-none px-4 py-2 rounded-xl cursor-pointer text-white shadow-xl hover:shadow-inner transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                                
+                                Google
+                            </button>
+                        </div>
+            
+                         <div class="mt-7">
+                            <div class="flex justify-center items-center">
+                                <label class="mr-2" >You are New?</label>
+                                <a href="signupU.html" class=" text-blue-500 transition duration-500 ease-in-out  transform hover:-translate-x hover:scale-105">
+                                    Create an Account
+                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Box-2 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/business.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Business Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-3 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/home.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Home Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-4 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/car.png" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Car Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-5 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/student.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Student Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+        
     </div>
+</section>
 
-    <!-- Footer Section -->
+
+      <!-- Footer Section -->
     <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
         <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
           <div class="mr-12 hidden lg:block">
@@ -346,11 +328,5 @@
           <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
         </div>
       </footer>
-
-
-
-    <!-- Script -->
-
 </body>
-
 </html>

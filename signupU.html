@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan BD</title>
+    <title>Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleU.css">
@@ -24,10 +23,9 @@
         }
     </script>
 </head>
-
 <body>
-    <!-- Navbar Section -->
-    <section>
+     <!-- Navbar Section -->
+     <section>
         <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
@@ -79,102 +77,61 @@
         </nav>
     </section>
 
+    <!-- Sign up from -->
+    <section>
+        <!-- component -->
+<div class="bg-grey-lighter min-h-screen flex flex-col">
+    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+            <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="fullname"
+                placeholder="Full Name" />
 
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="email"
+                placeholder="Email" />
 
+            <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="password"
+                placeholder="Password" />
+            <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="confirm_password"
+                placeholder="Confirm Password" />
 
+            <button
+                type="submit"
+                class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
+            >Create Account</button>
 
-
-    <!-- Card Section -->
-
-    <!-- component -->
-    <!-- Create By Joker Banny -->
-    <div class="min-h-screen bg-green-500 flex justify-center items-center py-1">
-        <div class="container mx-auto p-12 bg-gray-100 rounded-xl">
-            <h1 class="text-4xl uppercase font-bold from-current mb-8">Loan For All</h1>
-            <!-- Box-1 -->
-            <div class="sm:grid sm:grid-cols-2 lg:grid-cols-5 gap-4 space-y-4 sm:space-y-0">
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/personal.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Personal Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-2 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/business.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Business Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-3 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/home.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Home Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-4 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/car.png" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Car Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Box-5 -->
-                <div class="bg-white">
-                    <div>
-                        <div class="shadow-lg hover:shadow-xl transform transition duration-500 hover:scale-105">
-                            <div>
-                                <img class="w-full" src="./img/student.jpg" />
-                                <div class="px-4 py-2">
-                                    <h1 class="text-xl font-gray-700 font-bold">Student Loan</h1>
-                                    <p class="text-sm tracking-normal">Częstochowski pomnik Jana Pawła II wyjątkowo</p>
-                                    <button class="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">Read
-                                        more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center text-sm text-grey-dark mt-4">
+                By signing up, you agree to the 
+                <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                    Terms of Service
+                </a> and 
+                <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                    Privacy Policy
+                </a>
             </div>
         </div>
+
+        <div class="text-grey-dark mt-6">
+            Already have an account? 
+            <a class="no-underline border-b border-blue text-blue" href="loginU.html">
+                Log in
+            </a>.
+        </div>
     </div>
+</div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
@@ -346,11 +303,5 @@
           <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
         </div>
       </footer>
-
-
-
-    <!-- Script -->
-
 </body>
-
 </html>
