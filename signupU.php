@@ -1,140 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styleU.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styleU.css">
 
-    <!----===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
+
 <body>
-     <!-- Navbar Section -->
-     <section>
-        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-                </svg>
-                <span class="font-semibold text-xl tracking-tight">Loan BD</span>
-            </div>
-            <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
-                    <a href="indexU.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Home
-                    </a>
-                    <a href="loginU.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Log In
-                    </a>
-                    <a href="signupU.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Sign Up
-                    </a>
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Contact
-                    </a>
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                        About
-                    </a>
-                </div>
-                <div>
-                    <span>
-                        <a href=""><i class="fas fa-solid fa-bars"></i></a>
-                    </span>
-                </div>
+  <!-- Navbar Section -->
+  <section>
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+        </svg>
+        <span class="font-semibold text-xl tracking-tight">Loan BD</span>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="indexU.php" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Home
+          </a>
+          <a href="loginU.php" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Log In
+          </a>
+          <a href="signupU.php" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Sign Up
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Contact
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+            About
+          </a>
+        </div>
+        <div>
+          <span>
+            <a href=""><i class="fas fa-solid fa-bars"></i></a>
+          </span>
+        </div>
 
-            </div>
-        </nav>
-    </section>
+      </div>
+    </nav>
+  </section>
 
-    <!-- Sign up from -->
-    <section>
-        <!-- component -->
-<div class="bg-grey-lighter min-h-screen flex flex-col">
-    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+  <!-- Sign up from -->
+  <section>
+    <!-- component -->
+    <div class="bg-[#14B8A6] min-h-screen flex flex-col">
+      <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
         <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
-            <h1 class="mb-8 text-3xl text-center">Sign up</h1>
-            <input 
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="fullname"
-                placeholder="Full Name" />
+          <h1 class="mb-8 text-3xl text-center">Sign up</h1>
+          <form method="post" action="registration.php">
+            <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="name"
+              placeholder="Full Name" />
 
-            <input 
-                type="text"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="email"
-                placeholder="Email" />
+            <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="email"
+              placeholder="Email" />
 
-            <input 
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="password"
-                placeholder="Password" />
-            <input 
-                type="password"
-                class="block border border-grey-light w-full p-3 rounded mb-4"
-                name="confirm_password"
-                placeholder="Confirm Password" />
+            <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4" name="password"
+              placeholder="Password" />
+            <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"
+              name="confirm_password" placeholder="Confirm Password" />
 
-            <button
-                type="submit"
-                class="w-full text-center py-3 rounded bg-green text-white hover:bg-green-dark focus:outline-none my-1"
-            >Create Account</button>
+            <button type="submit"
+              class="w-full text-center py-3 rounded bg-black text-white hover:bg-green-dark focus:outline-none my-1">Create an Account</button>
+          </form>
 
-            <div class="text-center text-sm text-grey-dark mt-4">
-                By signing up, you agree to the 
-                <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
-                    Terms of Service
-                </a> and 
-                <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
-                    Privacy Policy
-                </a>
-            </div>
+          <div class="text-center text-sm text-grey-dark mt-4">
+            By signing up, you agree to the
+            <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+              Terms of Service
+            </a> and
+            <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+              Privacy Policy
+            </a>
+          </div>
         </div>
 
         <div class="text-grey-dark mt-6">
-            Already have an account? 
-            <a class="no-underline border-b border-blue text-blue" href="loginU.html">
-                Log in
-            </a>.
+          Already have an account?
+          <a class="no-underline border-b border-blue text-blue" href="loginU.html">
+            Log in
+          </a>.
         </div>
+      </div>
     </div>
-</div>
-    </section>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
+  <!-- Footer Section -->
+  <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
         <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
           <div class="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>
@@ -211,45 +196,10 @@
                     d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z">
                   </path>
                 </svg>
-                Tailwind ELEMENTS
+                Loan BD
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <div class="">
-              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                Products
-              </h6>
-              <p class="mb-4">
-                <a href="#!" class="text-gray-600">Angular</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-gray-600">React</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-gray-600">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-gray-600">Laravel</a>
-              </p>
-            </div>
-            <div class="">
-              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                Useful links
-              </h6>
-              <p class="mb-4">
-                <a href="#!" class="text-gray-600">Pricing</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-gray-600">Settings</a>
-              </p>
-              <p class="mb-4">
-                <a href="#!" class="text-gray-600">Orders</a>
-              </p>
-              <p>
-                <a href="#!" class="text-gray-600">Help</a>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis deserunt natus architecto enim quisquam iusto praesentium quidem vitae possimus a error eveniet ullam doloribus, minima nesciunt sed, cumque consequuntur?
               </p>
             </div>
             <div class="">
@@ -263,7 +213,7 @@
                     d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
                   </path>
                 </svg>
-                New York, NY 10012, US
+                Dhaka Bangladesh
               </p>
               <p class="flex items-center justify-center md:justify-start mb-4">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
@@ -283,7 +233,7 @@
                     d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
                   </path>
                 </svg>
-                + 01 234 567 88
+                +88 01745678911
               </p>
               <p class="flex items-center justify-center md:justify-start">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="print"
@@ -293,15 +243,16 @@
                     d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
                   </path>
                 </svg>
-                + 01 234 567 89
+                +88 01745678911
               </p>
             </div>
           </div>
         </div>
         <div class="text-center p-6 bg-gray-200">
           <span>© 2021 Copyright:</span>
-          <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+          <a class="text-gray-600 font-semibold" href="#">CSE327</a>
         </div>
       </footer>
 </body>
+
 </html>
