@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleU.css">
 
-    <!----===== Boxicons CSS ===== -->
+    <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script>
         tailwind.config = {
