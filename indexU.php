@@ -52,11 +52,11 @@
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Home
                     </a>
-                    <a href="loginU.php"
+                    <a href="loginsignup/index.php"
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Log In
                     </a>
-                    <a href="signupU.php"
+                    <a href="loginsignup/register.php"
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Sign Up
                     </a>
@@ -68,10 +68,15 @@
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
                         About
                     </a>
+                    
                 </div>
                 <div>
                     <span>
                         <a href=""><i class="fas fa-solid fa-bars"></i></a>
+                        <a href="login.php"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                        Admin
+                    </a>
                     </span>
                 </div>
 
