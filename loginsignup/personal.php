@@ -1,60 +1,20 @@
 <?php 
 
-include 'config.php';
-
-error_reporting(0);
-
 session_start();
 
-if (isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) {
     header("Location: index.php");
-}
-
-if (isset($_POST['submit'])) {
-	$username = $_POST['username'];
-	$email = $_POST['email'];
-	$password = md5($_POST['password']);
-	$cpassword = md5($_POST['cpassword']);
-
-	if ($password == $cpassword) {
-		$sql = "SELECT * FROM users WHERE email='$email'";
-		$result = mysqli_query($conn, $sql);
-		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO users (username, email, password)
-					VALUES ('$username', '$email', '$password')";
-			$result = mysqli_query($conn, $sql);
-			if ($result) {
-				echo "<script>alert('Wow! User Registration Completed.')</script>";
-				$username = "";
-				$email = "";
-				$_POST['password'] = "";
-				$_POST['cpassword'] = "";
-			} else {
-				echo "<script>alert('Woops! Something Wrong Went.')</script>";
-			}
-		} else {
-			echo "<script>alert('Woops! Email Already Exists.')</script>";
-		}
-		
-	} else {
-		echo "<script>alert('Password Not Matched.')</script>";
-	}
 }
 
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" type="text/css" href="style1.css">
-
-	<title>Register Form</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleU.css">
 
@@ -73,9 +33,8 @@ if (isset($_POST['submit'])) {
     </script>
 </head>
 <body>
-
-	<!-- Navbar Section -->
-	<section>
+    <!-- Nav Section Start -->
+    <section>
         <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
@@ -96,17 +55,9 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div class="text-sm lg:flex-grow">
-                    <a href="/loan-management/indexU.php"
+                    <a href="welcome.php"
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                         Home
-                    </a>
-                    <a href="index.php"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Log In
-                    </a>
-                    <a href="register.php"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Sign Up
                     </a>
                     <a href="#responsive-header"
                         class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
@@ -120,44 +71,44 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div>
                     <span>
-                        <a href=""><i class="fas fa-solid fa-bars"></i></a>
-                        <a href="login.php"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                        Admin
-                    </a>
+                    <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
+                    <a href="logout.php">Logout</a>
                     </span>
                 </div>
 
             </div>
         </nav>
     </section>
-	<!-- End Navbar section -->
+    <!-- END Nav Section -->
+
+    <!-- Main Section Start -->
+        <section>
+            <h1 class="text-center text-4xl pt-10 pb-10">We help you to get <span class="font-bold text-emerald-500">Personal Loan</span> easily</h1>
+            <section>
+                <div>
+                    <h1 class="text-center text-3xl pb-8">Select Loan Type</h1>
+                    <div class="flex justify-center gap-4 pb-8">
+                        <div class="form-check form-check-inline bg-green-300 h-16 w-32 text-center">
+                            <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio10">New Loan</label>
+                        </div>
+                        <div class="form-check form-check-inline bg-green-300 h-16 w-32">
+                            <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio20">Take Over</label>
+                        </div>
+                        <div class="form-check form-check-inline bg-green-300 h-16 w-32">
+                            <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio30">Top Up</label>
+                        </div>
+                  </div>
+                </div>
+            </section>
+        </section>
+    <!-- End Main Section -->
 
 
-	<div class="container">
-		<form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
-			<div class="input-group">
-				<input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
-			</div>
-			<div class="input-group">
-				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
-			</div>
-			<div class="input-group">
-				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
-            </div>
-            <div class="input-group">
-				<input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
-			</div>
-			<div class="input-group">
-				<button name="submit" class="btn">Register</button>
-			</div>
-			<p class="login-register-text">Have an account? <a href="index.php">Login Here</a>.</p>
-		</form>
-	</div>
 
-
-	<!-- Footer Section -->
+    <!-- Footer Section -->
     <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
         <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
           <div class="mr-12 hidden lg:block">
