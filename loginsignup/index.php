@@ -115,6 +115,7 @@ if (isset($_POST['submit'])) {
         </nav>
     </section>
 	
+    <!-- login section -->
 	<section>
 	<div class="container">
 		<form action="" method="POST" class="login-email">

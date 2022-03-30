@@ -81,7 +81,7 @@ if (!isset($_SESSION['username'])) {
     </section>
     <!-- END Nav Section -->
 
-    <!-- Main Section Start -->
+    <!--card Main Section Start -->
         <section class="flex">
       <div class="h-64 w-64 rounded overflow-hidden shadow-lg m-6">
   <img class="w-full" src="../img/personal.jpg" alt="Sunset in the mountains">

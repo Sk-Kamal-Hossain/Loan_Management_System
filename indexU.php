@@ -6,6 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan BD</title>
+        <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('s6sds6wrgmxc');
+</script>
+<!-- End of Async Drift Code -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleU.css">
@@ -24,7 +52,7 @@
         }
     </script>
 
-    <style>
+    <!-- <style>
       body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;
   
@@ -99,7 +127,7 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -255,7 +283,7 @@
 
     <!-- live chat option -->
 
-    <section id="livechat">
+    <!-- <section id="livechat">
     <button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
@@ -269,7 +297,13 @@
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
-    </section>
+    </section> -->
+
+
+
+
+    <!-- new live chat -->
+    
 
     <!-- Footer Section -->
     <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
@@ -392,9 +426,9 @@
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="print"
                   class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512">
-                  <path fill="currentColor"
+                  path fill="currentColor"
                     d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
-                  </path>
+                  </path><
                 </svg>
                 +88 01745678911
               </p>
