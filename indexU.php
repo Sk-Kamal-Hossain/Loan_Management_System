@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan BD</title>
         <!-- Start of Async Drift Code -->
-<script>
+<!-- <script>
 "use strict";
 
 !function() {
@@ -32,7 +32,7 @@
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('s6sds6wrgmxc');
-</script>
+</script> -->
 <!-- End of Async Drift Code -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
@@ -52,7 +52,7 @@ drift.load('s6sds6wrgmxc');
         }
     </script>
 
-    <!-- <style>
+    <style>
       body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;
   
@@ -127,7 +127,7 @@ drift.load('s6sds6wrgmxc');
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-    </style> -->
+    </style>
 </head>
 
 <body>
@@ -283,7 +283,7 @@ drift.load('s6sds6wrgmxc');
 
     <!-- live chat option -->
 
-    <!-- <section id="livechat">
+    <section id="livechat">
     <button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
@@ -297,7 +297,7 @@ drift.load('s6sds6wrgmxc');
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
-    </section> -->
+    </section>
 
 
 
