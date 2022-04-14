@@ -1,115 +1,118 @@
-<?php 
-
+<?php
 session_start();
-
 if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
+header("Location: index.php");
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14ab6c4c72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styleU.css">
-
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
+    tailwind.config = {
+    theme: {
+    extend: {
+    colors: {
+    clifford: '#da373d',
+    }
+    }
+    }
+    }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Nav Section Start -->
     <section>
-        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-                </svg>
-                <span class="font-semibold text-xl tracking-tight">Loan BD</span>
+      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+            </svg>
+            <span class="font-semibold text-xl tracking-tight">Loan BD</span>
+          </div>
+          <div class="block lg:hidden">
+            <button
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a href="welcome.php"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                Home
+              </a>
+              <a href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                Contact
+              </a>
+              <a href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                About
+              </a>
+              
             </div>
-            <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
+            <div>
+              <span>
+                <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
+                <a href="logout.php">Logout</a>
+              </span>
             </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
-                    <a href="welcome.php"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Home
-                    </a>
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                        Contact
-                    </a>
-                    <a href="#responsive-header"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                        About
-                    </a>
-                    
-                </div>
-                <div>
-                    <span>
-                    <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
-                    <a href="logout.php">Logout</a>
-                    </span>
-                </div>
-
-            </div>
+          </div>
         </nav>
-    </section>
-    <!-- END Nav Section -->
-
-    <!-- Main Section Start -->
+      </section>
+      <!-- END Nav Section -->
+      <!-- Main Section Start -->
+      <section>
+        <h1 class="text-center text-4xl pt-10 pb-10">We help you to get <span class="font-bold text-emerald-500">Personal Loan</span> easily</h1>
         <section>
-            <h1 class="text-center text-4xl pt-10 pb-10">We help you to get <span class="font-bold text-emerald-500">Personal Loan</span> easily</h1>
-            <section>
-                <div>
-                    <h1 class="text-center text-3xl pb-8">Select Loan Type</h1>
-                    <div class="flex justify-center gap-4 pb-8">
-                        <div class="form-check form-check-inline bg-green-300 h-16 w-32 text-center">
-                            <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio10">New Loan</label>
-                        </div>
-                        <div class="form-check form-check-inline bg-green-300 h-16 w-32">
-                            <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio20">Take Over</label>
-                        </div>
-                        <div class="form-check form-check-inline bg-green-300 h-16 w-32">
-                            <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio30">Top Up</label>
-                        </div>
-                  </div>
-                </div>
-            </section>
+          <div>
+            <h1 class="text-center text-3xl pb-8">Select Loan Type</h1>
+            <div class="flex justify-center gap-4 pb-8">
+              <div class="form-check form-check-inline bg-green-300 h-16 w-32 text-center">
+                <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio10">New Loan</label>
+              </div>
+              <div class="form-check form-check-inline bg-green-300 h-16 w-32">
+                <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio20">Take Over</label>
+              </div>
+              <div class="form-check form-check-inline bg-green-300 h-16 w-32">
+                <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio30">Top Up</label>
+              </div>
+            </div>
+          </div>
+          <form action="comparerate.php" class="text-center mx-16 text-white drop-shadow-lg">
+            <!-- ---------------- -->
+            <div class="text-black drop-shadow-lg rounded">
+              <label class="drop-shadow-lg">Select Your Profession:</label>
+              <select class="rounded">
+                <option value="volvo">Salaried</option>
+                <option value="saab">Businessman</option>
+                <option value="opel">Lan loard</option>
+              </select>
+            </div>
+            <!-- ---------------- -->
+            <button type="submit" class="text-center bg-orange-400 rounded p-4 mx-16 mb-8 mt-8 font-semibold">COMPARE RATE</button>
+          </form>
         </section>
-    <!-- End Main Section -->
-
-
-
-    <!-- Footer Section -->
-    <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
+      </section>
+      <!-- End Main Section -->
+      <!-- Footer Section -->
+      <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
         <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
           <div class="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>
@@ -171,22 +174,22 @@ if (!isset($_SESSION['username'])) {
           <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="">
               <h6 class="
-                  uppercase
-                  font-semibold
-                  mb-4
-                  flex
-                  items-center
-                  justify-center
-                  md:justify-start
-                ">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cubes"
-                  class="w-4 mr-3" role="img" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path fill="currentColor"
-                    d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z">
-                  </path>
-                </svg>
-                Loan BD
+              uppercase
+              font-semibold
+              mb-4
+              flex
+              items-center
+              justify-center
+              md:justify-start
+              ">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cubes"
+                class="w-4 mr-3" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                  d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z">
+                </path>
+              </svg>
+              Loan BD
               </h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis deserunt natus architecto enim quisquam iusto praesentium quidem vitae possimus a error eveniet ullam doloribus, minima nesciunt sed, cumque consequuntur?
@@ -194,7 +197,7 @@ if (!isset($_SESSION['username'])) {
             </div>
             <div class="">
               <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                Contact
+              Contact
               </h6>
               <p class="flex items-center justify-center md:justify-start mb-4">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
@@ -243,5 +246,5 @@ if (!isset($_SESSION['username'])) {
           <a class="text-gray-600 font-semibold" href="#">CSE327</a>
         </div>
       </footer>
-</body>
-</html>
+    </body>
+  </html>

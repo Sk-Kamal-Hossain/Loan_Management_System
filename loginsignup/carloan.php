@@ -86,22 +86,36 @@ if (!isset($_SESSION['username'])) {
             <h1 class="text-center text-4xl pt-10 pb-10">We help you to get <span class="font-bold text-emerald-500">Car Loan</span> easily</h1>
             <section>
                 <div>
-                    <h1 class="text-center text-3xl pb-8">Select Loan Type</h1>
+                    <h1 class="text-center text-3xl pb-8">Select Car Type</h1>
                     <div class="flex justify-center gap-4 pb-8">
                         <div class="form-check form-check-inline bg-green-300 h-16 w-32 text-center">
                             <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio10">New Loan</label>
+                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio10">New Car</label>
                         </div>
                         <div class="form-check form-check-inline bg-green-300 h-16 w-32">
                             <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio20">Take Over</label>
+                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio20">Used Car</label>
                         </div>
                         <div class="form-check form-check-inline bg-green-300 h-16 w-32">
                             <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio30">Top Up</label>
+                            <label class="form-check-label inline-block text-gray-800 mt-4" for="inlineRadio30">Recondition Car</label>
                         </div>
                   </div>
                 </div>
+                <form action="comparerate.php" class="text-center mx-16 text-white drop-shadow-lg">
+            <!-- ---------------- -->
+            <div class="text-black drop-shadow-lg rounded">
+              <label class="drop-shadow-lg">Select Your Profession:</label>
+              <select class="rounded">
+                <option value="volvo">Select</option>
+                <option value="volvo">Salaried</option>
+                <option value="saab">Businessman</option>
+                <option value="opel">Lan loard</option>
+              </select>
+            </div>
+            <!-- ---------------- -->
+            <button type="submit" class="text-center bg-orange-400 rounded p-4 mx-16 mb-8 mt-8 font-semibold">COMPARE RATE</button>
+          </form>
             </section>
         </section>
     <!-- End Main Section -->

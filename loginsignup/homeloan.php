@@ -101,6 +101,28 @@ if (!isset($_SESSION['username'])) {
                         </div>
                   </div>
                 </div>
+
+                <form action="comparerate.php" class="text-center mx-16 text-white drop-shadow-lg">
+            <!-- ---------------- -->
+            <div class="text-black drop-shadow-lg rounded">
+              <label class="drop-shadow-lg">Select Loan Purpose:</label>
+              <select class="rounded">
+                <option value="volvo">Select</option>
+                <option value="volvo">Apartment Buy</option>
+                <option value="saab">Construction</option>
+                <option value="opel">Land Buy</option>
+                <option value="opel">Renovation</option>
+              </select>
+              <label class="drop-shadow-lg">Select Loan Type:</label>
+              <select class="rounded">
+                <option value="volvo">Select</option>
+                <option value="volvo">New Loan</option>
+                <option value="saab">Takeover Loan</option>
+              </select>
+            </div>
+            <!-- ---------------- -->
+            <button type="submit" class="text-center bg-orange-400 rounded p-4 mx-16 mb-8 mt-8 font-semibold">COMPARE RATE</button>
+          </form>
             </section>
         </section>
     <!-- End Main Section -->
